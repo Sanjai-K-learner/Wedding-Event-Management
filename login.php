@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['Sign'])) {
             body {
                 margin: 0;
                 padding: 0;
-                background: url("holding.avif") no-repeat center center fixed;
+                background: url("Images/holding.avif") no-repeat center center fixed;
                 background-size: cover;
                 font-family: Arial, sans-serif;
             }

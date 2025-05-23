@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
-            background-image: url("invi5.jpg");
+            background-image: url("Images/invi5.jpg");
             background-size: cover;
             background-position: center;
         }

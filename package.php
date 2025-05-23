@@ -190,9 +190,9 @@ $is_logged_in = isset($_SESSION['email']);
         <?php else: ?>
             <div id="nav-bar">
             <ul>
-                <li class="logotxt"><a href="home.php"><img src="home.png" class="logo"> Home</a></li>
+                <li class="logotxt"><a href="home.php"><img src="Images/home.png" class="logo"> Home</a></li>
                 <li id="tt">Wedding Wonders</li>
-                <li class="logotxt" id="log"><a href="profile.php"><img src="user.png" class="logo"> Profile</a></li>
+                <li class="logotxt" id="log"><a href="profile.php"><img src="Images/user.png" class="logo"> Profile</a></li>
             </ul>
             </div>
 
@@ -226,14 +226,14 @@ $is_logged_in = isset($_SESSION['email']);
                     </ul>
                 </div>
                 <div>
-                    <img src="fullWed.jpg" id="R1c2" alt="Full Wedding Package">
+                    <img src="Images/fullWed.jpg" id="R1c2" alt="Full Wedding Package">
                 </div>
             </div>
 
             <!-- Customized Plan -->
             <div id="t2" onclick="selectPackage('custom')">
                 <div>
-                    <img src="custwed.jpg" id="R2c1" alt="Custom Wedding Package">
+                    <img src="Images/custwed.jpg" id="R2c1" alt="Custom Wedding Package">
                 </div>
                 <div id="R2c2">
                     <h2>Customized Plan</h2>

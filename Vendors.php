@@ -144,36 +144,36 @@ if (empty($event) || empty($event_date) || empty($event_time)) {
     </style>
     <script>
         const vendors = {
-            photography: {
-                1: { name: "ABC Studio", img: "photoimg.jpg", desc: "Capturing your special day perfectly.", rating: 3, cost: 20000 },
-                2: { name: "Zion Photography", img: "photo2.jpg", desc: "Modern cinematic memories.", rating: 4, cost: 25000 },
-                3: { name: "Professional Makers", img: "photo3.jpg", desc: "Elegant photography style.", rating: 5, cost: 30000 },
-                4: { name: "Gravity Workers", img: "photo4.jpg", desc: "Creative and artistic photos.", rating: 4, cost: 22000 }
-            },
-            wedding: {
-                1: { name: "ABC Decorators", img: "wed_dec.jpeg", desc: "Elegant decorations tailored for you.", rating: 4, cost: 50000 },
-                2: { name: "Zion Decor", img: "dec2.jpg", desc: "Floral themes and vibrant lighting.", rating: 5, cost: 55000 },
-                3: { name: "Pro Event Setup", img: "dec3.jpg", desc: "Luxurious wedding setups.", rating: 5, cost: 60000 },
-                4: { name: "Gravity Events", img: "dec4.jpg", desc: "Traditional with a modern touch.", rating: 4, cost: 48000 }
-            },
-            catering: {
-                1: { name: "ABC Caterers", img: "wedding-catering-services.jpeg", desc: "Delicious multi-cuisine dishes.", rating: 5, cost: 200 },
-                2: { name: "Zion Caterers", img: "cat2.jpg", desc: "Spicy and authentic flavors.", rating: 4, cost: 300 },
-                3: { name: "Pro Cuisine", img: "cat3.jpg", desc: "Chef-special custom menus.", rating: 5, cost: 450 },
-                4: { name: "Gravity Kitchen", img: "cat4.jpg", desc: "Fusion and modern platters.", rating: 4, cost: 390 }
-            },
-            entertainment: {
-                1: { name: "ABC Entertainment", img: "enterdj.jpeg", desc: "Groovy DJ and performances.", rating: 4, cost: 30000 },
-                2: { name: "Zion DJs", img: "ent2.jpg", desc: "Live music and lights.", rating: 5, cost: 35000 },
-                3: { name: "Pro Beats", img: "ent3.jpg", desc: "Rocking dance floors.", rating: 4, cost: 33000 },
-                4: { name: "Gravity Vibes", img: "ent4.jpg", desc: "Fusion music experience.", rating: 4, cost: 31000 }
-            },
-            makeup: {
-                1: { name: "ABC Makeup", img: "makeup.jpg", desc: "Bridal makeup perfection.", rating: 5, cost: 15000 },
-                2: { name: "Zion Looks", img: "mak2.jpg", desc: "Flawless and natural style.", rating: 5, cost: 18000 },
-                3: { name: "Pro Stylists", img: "mak3.jpg", desc: "Bold and elegant.", rating: 4, cost: 17000 },
-                4: { name: "Gravity Glam", img: "mak4.jpg", desc: "Red carpet-ready looks.", rating: 4, cost: 16000 }
-            }
+           photography: {
+                    1: { name: "ABC Studio", img: "Images/photoimg.jpg", desc: "Capturing your special day perfectly.", rating: 3, cost: 20000 },
+                    2: { name: "Zion Photography", img: "Images/photo2.jpg", desc: "Modern cinematic memories.", rating: 4, cost: 25000 },
+                    3: { name: "Professional Makers", img: "Images/photo3.jpg", desc: "Elegant photography style.", rating: 5, cost: 30000 },
+                    4: { name: "Gravity Workers", img: "Images/photo4.jpg", desc: "Creative and artistic photos.", rating: 4, cost: 22000 }
+                },
+                wedding: {
+                    1: { name: "ABC Decorators", img: "Images/wed_dec.jpeg", desc: "Elegant decorations tailored for you.", rating: 4, cost: 50000 },
+                    2: { name: "Zion Decor", img: "Images/dec2.jpg", desc: "Floral themes and vibrant lighting.", rating: 5, cost: 55000 },
+                    3: { name: "Pro Event Setup", img: "Images/dec3.jpg", desc: "Luxurious wedding setups.", rating: 5, cost: 60000 },
+                    4: { name: "Gravity Events", img: "Images/dec4.jpg", desc: "Traditional with a modern touch.", rating: 4, cost: 48000 }
+                },
+                catering: {
+                    1: { name: "ABC Caterers", img: "Images/wedding-catering-services.jpeg", desc: "Delicious multi-cuisine dishes.", rating: 5, cost: 200 },
+                    2: { name: "Zion Caterers", img: "Images/cat2.jpg", desc: "Spicy and authentic flavors.", rating: 4, cost: 300 },
+                    3: { name: "Pro Cuisine", img: "Images/cat3.jpg", desc: "Chef-special custom menus.", rating: 5, cost: 450 },
+                    4: { name: "Gravity Kitchen", img: "Images/cat4.jpg", desc: "Fusion and modern platters.", rating: 4, cost: 390 }
+                },
+                entertainment: {
+                    1: { name: "ABC Entertainment", img: "Images/enterdj.jpeg", desc: "Groovy DJ and performances.", rating: 4, cost: 30000 },
+                    2: { name: "Zion DJs", img: "Images/ent2.jpg", desc: "Live music and lights.", rating: 5, cost: 35000 },
+                    3: { name: "Pro Beats", img: "Images/ent3.jpg", desc: "Rocking dance floors.", rating: 4, cost: 33000 },
+                    4: { name: "Gravity Vibes", img: "Images/ent4.jpg", desc: "Fusion music experience.", rating: 4, cost: 31000 }
+                },
+                makeup: {
+                    1: { name: "ABC Makeup", img: "Images/makeup.jpg", desc: "Bridal makeup perfection.", rating: 5, cost: 15000 },
+                    2: { name: "Zion Looks", img: "Images/mak2.jpg", desc: "Flawless and natural style.", rating: 5, cost: 18000 },
+                    3: { name: "Pro Stylists", img: "Images/mak3.jpg", desc: "Bold and elegant.", rating: 4, cost: 17000 },
+                    4: { name: "Gravity Glam", img: "Images/mak4.jpg", desc: "Red carpet-ready looks.", rating: 4, cost: 16000 }
+                }
         };
 
         const bookings = {};
@@ -235,9 +235,9 @@ if (empty($event) || empty($event_date) || empty($event_time)) {
     <!-- Navigation Bar -->
     <div id="nav-bar">
         <ul>
-            <li class="logotxt"><a href="home.php"><img src="home.png" class="logo"> Home</a></li>
+            <li class="logotxt"><a href="home.php"><img src="Images/home.png" class="logo"> Home</a></li>
             <li id="tt">Wedding Wonders</li>
-            <li class="logotxt" id="log"><a href="profile.php"><img src="user.png" class="logo"> Profile</a></li>
+            <li class="logotxt" id="log"><a href="profile.php"><img src="Images/user.png" class="logo"> Profile</a></li>
         </ul>
     </div>
 
@@ -254,7 +254,7 @@ if (empty($event) || empty($event_date) || empty($event_time)) {
                 <li class="listword"><a href="#" onclick="updateSection('photography',4)">Gravity Workers</a></li>
             </ul>
         </div>
-        <div class="vendor-photo"><img id="photography_img" src="photoimg.jpg" class="vendorpic"></div>
+        <div class="vendor-photo"><img id="photography_img" src="Images/photoimg.jpg" class="vendorpic"></div>
         <div>
             <h4 id="photography_desc" style="color:black;">Every detail of this wedding decoration is a reflection of love, joy, and togetherness</h4>
             <h3 id="photography_rating" style="color:rgb(250, 209, 1)">★★★☆☆</h3>
@@ -274,7 +274,7 @@ if (empty($event) || empty($event_date) || empty($event_time)) {
                 <li class="listword"><a href="#" onclick="updateSection('wedding',4)">Gravity Workers</a></li>
             </ul>
         </div>
-        <div class="vendor-photo"><img id="wedding_img" src="wed_dec.jpeg" class="vendorpic"></div>
+        <div class="vendor-photo"><img id="wedding_img" src="Images/wed_dec.jpeg" class="vendorpic"></div>
         <div>
             <h4 id="wedding_desc" style="color:black;">Every detail of this wedding decoration is a reflection of love, joy, and togetherness</h4>
             <h3 id="wedding_rating" style="color:rgb(250, 209, 1);">★★★☆☆</h3>
@@ -294,7 +294,7 @@ if (empty($event) || empty($event_date) || empty($event_time)) {
                 <li class="listword"><a href="#" onclick="updateSection('catering',4)">Gravity Kitchen</a></li>
             </ul>
         </div>
-        <div class="vendor-photo"><img id="catering_img" src="wedding-catering-services.jpeg" class="vendorpic"></div>
+        <div class="vendor-photo"><img id="catering_img" src="Images/wedding-catering-services.jpeg" class="vendorpic"></div>
         <div>
             <h4 id="catering_desc" style="color:black;">Delicious multi-cuisine dishes.</h4>
             <h3 id="catering_rating" style="color:rgb(250, 209, 1);">★★★★★</h3>
@@ -314,7 +314,7 @@ if (empty($event) || empty($event_date) || empty($event_time)) {
                 <li class="listword"><a href="#" onclick="updateSection('entertainment',4)">Gravity Vibes</a></li>
             </ul>
         </div>
-        <div class="vendor-photo"><img id="entertainment_img" src="enterdj.jpeg" class="vendorpic"></div>
+        <div class="vendor-photo"><img id="entertainment_img" src="Images/enterdj.jpeg" class="vendorpic"></div>
         <div>
             <h4 id="entertainment_desc" style="color:black;">Groovy DJ and performances.</h4>
             <h3 id="entertainment_rating" style="color:rgb(250, 209, 1);">★★★★☆</h3>
@@ -334,7 +334,7 @@ if (empty($event) || empty($event_date) || empty($event_time)) {
                 <li class="listword"><a href="#" onclick="updateSection('makeup',4)">Gravity Glam</a></li>
             </ul>
         </div>
-        <div class="vendor-photo"><img id="makeup_img" src="makeup.jpg" class="vendorpic"></div>
+        <div class="vendor-photo"><img id="makeup_img" src="Images/makeup.jpg" class="vendorpic"></div>
         <div>
             <h4 id="makeup_desc" style="color:black;">Bridal makeup perfection.</h4>
             <h3 id="makeup_rating" style="color:rgb(250, 209, 1);">★★★★★</h3>

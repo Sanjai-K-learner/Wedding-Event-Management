@@ -135,7 +135,7 @@ $marriage_place_amount = $_SESSION['marriage_place_amount'] ?? 0;
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("awesomeback.jpg");
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/awesomeback.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       margin: 0;
@@ -277,7 +277,7 @@ $marriage_place_amount = $_SESSION['marriage_place_amount'] ?? 0;
       <!-- Engagement Box -->
       <div class="box">
         <h3>Engagement</h3>
-        <img src="engagement.jpeg" alt="Engagement" class="imgcls">
+        <img src="Images/engagement.jpeg" alt="Engagement" class="imgcls">
         
         <?php if ($engagement_place): ?>
           <div class="place-details">
@@ -309,7 +309,7 @@ $marriage_place_amount = $_SESSION['marriage_place_amount'] ?? 0;
       <!-- Reception Box -->
       <div class="box">
         <h3>Reception</h3>
-        <img src="reception.jpeg" alt="Reception" class="imgcls">
+        <img src="Images/reception.jpeg" alt="Reception" class="imgcls">
         
         <?php if ($reception_place): ?>
           <div class="place-details">
@@ -341,7 +341,7 @@ $marriage_place_amount = $_SESSION['marriage_place_amount'] ?? 0;
       <!-- Marriage Box -->
       <div class="box">
         <h3>Marriage</h3>
-        <img src="marriage.jpeg" alt="Marriage" class="imgcls">
+        <img src="Images/marriage.jpeg" alt="Marriage" class="imgcls">
         
         <?php if ($marriage_place): ?>
           <div class="place-details">

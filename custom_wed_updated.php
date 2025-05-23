@@ -104,7 +104,7 @@ $selected_event = $_SESSION['selected_event'] ?? '';
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("awesomeback.jpg");
+     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/awesomeback.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       padding: 20px;
@@ -292,7 +292,7 @@ $selected_event = $_SESSION['selected_event'] ?? '';
         <label><input type="checkbox" name="select_<?= $event ?>" id="select_<?= $event ?>" onchange="toggleEventBox('<?= $event ?>')" <?= $event_data[$event]['selected'] ? 'checked' : '' ?>> <?= ucfirst($event) ?></label>
         <div class="box" id="<?= $event ?>-box">
           <h3><?= ucfirst($event) ?></h3>
-          <img src="<?= $event ?>.jpeg" class="imgcls">
+         <img src="Images/<?= $event ?>.jpeg" class="imgcls">
           
           <?php if (!empty($event_data[$event]['date']) && !empty($event_data[$event]['time'])): ?>
             <div class="date-time-info">

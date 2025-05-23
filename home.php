@@ -15,7 +15,7 @@ session_start();
         body {
             background-color: #fff5f8;
             color: #333;
-            background-image: url("homeback.jpg");
+            background-image: url("Images/homeback.jpg");
         }
         /* Navigation Bar */
         #nav-bar {
@@ -56,7 +56,7 @@ session_start();
         .hero {
             text-align: center;
             padding: 100px 20px;
-            background: url('wedding.jpg') no-repeat center center/cover;
+            background: url('Images/wedding.jpg') no-repeat center center/cover;
             color: white;
         }
         .hero h1 {
@@ -120,9 +120,9 @@ session_start();
     <!-- Navigation Bar -->
     <div id="nav-bar">
         <ul>
-            <li class="logotxt"><a href="home.php"><img src="home.png" class="logo"> Home</a></li>
+            <li class="logotxt"><a href="home.php"><img src="Images/home.png" class="logo"> Home</a></li>
             <li id="tt">Wedding Wonders</li>
-            <li class="logotxt" id="log"><a href="profile.php"><img src="user.png" class="logo"> Profile</a></li>
+            <li class="logotxt" id="log"><a href="profile.php"><img src="Images/user.png" class="logo"> Profile</a></li>
         </ul>
     </div>
 

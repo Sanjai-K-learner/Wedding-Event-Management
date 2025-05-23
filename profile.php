@@ -147,9 +147,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- Navigation Bar -->
         <div id="nav-bar">
             <ul>
-                <li class="logotxt"><a href="home.php"><img src="home.png" class="logo"> Home</a></li>
+                <li class="logotxt"><a href="home.php"><img src="Images/home.png" class="logo"> Home</a></li>
                 <li id="tt">Wedding Wonders</li>
-                <li class="logotxt" id="log"><a href="profile.php"><img src="user.png" class="logo"> Profile</a></li>
+                <li class="logotxt" id="log"><a href="profile.php"><img src="Images/user.png" class="logo"> Profile</a></li>
             </ul>
         </div>
         <h1 align="center" class="typewriter">Hii <?php echo htmlspecialchars($name); ?></h1>
