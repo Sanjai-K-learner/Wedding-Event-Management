@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Places</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .place-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .place-card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .place-card:hover {
+      transform: scale(1.05);
+    }
+    .place-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .place-card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .place-card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="event-title">Explore Places for <span id="event-name"></span></h1>
+  <div class="place-list" id="place-list">
+    <!-- Place cards will be dynamically added here -->
+  </div>
+
+  <script>
+    // Get the event type from the query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventType = urlParams.get('event');
+
+    // Update the event title
+    document.getElementById('event-name').textContent = eventType;
+
+    // Sample places data (replace with your actual data)
+    const places = {
+      Engagement: [
+        { name: 'Beach Resort', image: 'https://via.placeholder.com/200', description: 'Perfect for a romantic engagement.' },
+        { name: 'Garden Venue', image: 'https://via.placeholder.com/200', description: 'A serene garden setting.' },
+      ],
+      Wedding: [
+        { name: 'Grand Hall', image: 'https://via.placeholder.com/200', description: 'Elegant and spacious.' },
+        { name: 'Outdoor Venue', image: 'https://via.placeholder.com/200', description: 'Beautiful outdoor setting.' },
+      ],
+      Marriage: [
+        { name: 'Traditional Hall', image: 'https://via.placeholder.com/200', description: 'Traditional and cultural.' },
+        { name: 'Luxury Hotel', image: 'https://via.placeholder.com/200', description: 'Luxurious and modern.' },
+      ],
+      Anniversary: [
+        { name: 'Rooftop Restaurant', image: 'https://via.placeholder.com/200', description: 'Stunning views.' },
+        { name: 'Private Villa', image: 'https://via.placeholder.com/200', description: 'Exclusive and private.' },
+      ],
+    };
+
+    // Display places for the selected event
+    const placeList = document.getElementById('place-list');
+    if (eventType && places[eventType]) {
+      places[eventType].forEach(place => {
+        const placeCard = document.createElement('div');
+        placeCard.className = 'place-card';
+        placeCard.innerHTML = `
+          <img src="${place.image}" alt="${place.name}">
+          <h3>${place.name}</h3>
+          <p>${place.description}</p>
+        `;
+        placeCard.onclick = () => selectPlace(eventType, place.name);
+        placeList.appendChild(placeCard);
+      });
+    }
+
+    // Function to handle place selection
+    function selectPlace(eventType, placeName) {
+      // Save the selected place in localStorage
+      localStorage.setItem(eventType, placeName);
+      // Redirect back to the main page
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
