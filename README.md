@@ -66,5 +66,5 @@ Wedding-Event-Management/
 - Admin dashboard for event monitoring
 - Email notifications on booking
 - Payment gateway integration
-- User login & profile management
+
 
