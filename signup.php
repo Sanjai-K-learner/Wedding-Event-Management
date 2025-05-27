@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" placeholder="Email (optional)" name="email" id="email" 
+                <input type="email" placeholder="Email" name="email" id="email" 
                        value="<?php echo htmlspecialchars($email); ?>">
                 <?php if (isset($errors['email'])): ?>
                     <span class="error"><?php echo $errors['email']; ?></span>
